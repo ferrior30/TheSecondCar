@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CarInfoCell1" rowHeight="93" id="NsK-DC-Xc7" customClass="CWCarInfoCell1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NsK-DC-Xc7" id="vOu-fV-61A">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="87.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXi-j4-Vea">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="车辆名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNn-fg-l10">
+                                <rect key="frame" x="10" y="13" width="60" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="武汉市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8el-du-Iy7">
+                                <rect key="frame" x="85" y="13" width="45" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="arrowRightDarkGrey" translatesAutoresizingMaskIntoConstraints="NO" id="bhU-C6-7cD">
+                                <rect key="frame" x="294" y="17" width="6" height="11"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="8el-du-Iy7" firstAttribute="leading" secondItem="bNn-fg-l10" secondAttribute="trailing" constant="15" id="7rV-u9-2sI"/>
+                            <constraint firstItem="8el-du-Iy7" firstAttribute="centerY" secondItem="oXi-j4-Vea" secondAttribute="centerY" id="J31-LS-tGH"/>
+                            <constraint firstAttribute="trailing" secondItem="bhU-C6-7cD" secondAttribute="trailing" constant="20" id="efi-Q5-Uyl"/>
+                            <constraint firstItem="bNn-fg-l10" firstAttribute="centerY" secondItem="oXi-j4-Vea" secondAttribute="centerY" id="jhM-js-EdV"/>
+                            <constraint firstItem="bhU-C6-7cD" firstAttribute="centerY" secondItem="oXi-j4-Vea" secondAttribute="centerY" id="nat-d2-acI"/>
+                            <constraint firstItem="bNn-fg-l10" firstAttribute="leading" secondItem="oXi-j4-Vea" secondAttribute="leading" constant="10" id="ush-1w-CFP"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2XM-Po-yO2">
+                        <rect key="frame" x="0.0" y="44" width="320" height="43.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="车商地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lla-Ge-Fxt">
+                                <rect key="frame" x="10" y="13" width="60" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="武汉市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEg-iH-EAb">
+                                <rect key="frame" x="83" y="12" width="45" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="SEg-iH-EAb" firstAttribute="leading" secondItem="lla-Ge-Fxt" secondAttribute="trailing" constant="13" id="41S-tU-vp6"/>
+                            <constraint firstItem="lla-Ge-Fxt" firstAttribute="leading" secondItem="2XM-Po-yO2" secondAttribute="leading" constant="10" id="KRT-ii-eG5"/>
+                            <constraint firstItem="SEg-iH-EAb" firstAttribute="centerY" secondItem="2XM-Po-yO2" secondAttribute="centerY" id="UJV-32-Isj"/>
+                            <constraint firstItem="lla-Ge-Fxt" firstAttribute="centerY" secondItem="2XM-Po-yO2" secondAttribute="centerY" id="vwn-lo-bkV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="2XM-Po-yO2" secondAttribute="trailing" id="5Se-gD-Fzb"/>
+                    <constraint firstAttribute="trailing" secondItem="oXi-j4-Vea" secondAttribute="trailing" id="9Im-xM-He3"/>
+                    <constraint firstAttribute="bottom" secondItem="2XM-Po-yO2" secondAttribute="bottom" id="Ef6-Ue-XiH"/>
+                    <constraint firstItem="oXi-j4-Vea" firstAttribute="height" secondItem="vOu-fV-61A" secondAttribute="height" multiplier="0.5" id="QYa-0Q-14l"/>
+                    <constraint firstItem="oXi-j4-Vea" firstAttribute="top" secondItem="vOu-fV-61A" secondAttribute="top" id="UEY-3T-zsd"/>
+                    <constraint firstItem="2XM-Po-yO2" firstAttribute="leading" secondItem="vOu-fV-61A" secondAttribute="leading" id="Y4c-Km-wFA"/>
+                    <constraint firstItem="oXi-j4-Vea" firstAttribute="leading" secondItem="vOu-fV-61A" secondAttribute="leading" id="ZZu-3p-Bzi"/>
+                    <constraint firstItem="2XM-Po-yO2" firstAttribute="top" secondItem="oXi-j4-Vea" secondAttribute="bottom" id="kLv-Qe-Hdg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cheShangAddress" destination="SEg-iH-EAb" id="0qb-Uk-qYM"/>
+                <outlet property="cheShangName" destination="8el-du-Iy7" id="AdQ-Y5-SwI"/>
+                <outlet property="cheShangNameView" destination="oXi-j4-Vea" id="L4C-Za-uQ2"/>
+            </connections>
+            <point key="canvasLocation" x="210" y="327.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrowRightDarkGrey" width="6" height="11"/>
+    </resources>
+</document>

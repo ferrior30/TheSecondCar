@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11163.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11133"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarInfoCell0" id="DVl-vk-6jW" customClass="CWCarInfoCell0">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="274"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DVl-vk-6jW" id="EdK-1t-QkA">
+                <frame key="frameInset" width="320" height="273.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGk-gt-LSL" customClass="CWBuyScrollView">
+                        <color key="backgroundColor" red="0.49951739490000002" green="0.14901686659999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="9xw-SH-Lu7"/>
+                        </constraints>
+                    </scrollView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="斯柯达 野帝 2014年款 Yeti 1.8TSI 双离合 极地版" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ph-wi-ARs">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSp-7Z-NO4">
+                        <attributedString key="attributedText">
+                            <fragment content="9.80">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.28065669920000003" blue="0.51704833139999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="18" name=".AppleSystemUIFont"/>
+                                    <font key="NSOriginalFont" size="18" name=".AppleSystemUIFont"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="万">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.28065669920000003" blue="0.51704833139999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="22" name=".PingFangSC-Regular"/>
+                                    <font key="NSOriginalFont" size="22" name=".PingFangSC-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新车价：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipu-eb-RQf">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="车猫体验店" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEa-kZ-DsE">
+                        <color key="backgroundColor" red="1" green="0.17109604989999999" blue="0.4272727677" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="56" id="EJZ-Mu-QVl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(武汉可迁)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFS-bj-ThZ">
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="1" green="0.28065669920000003" blue="0.51704833139999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="武汉" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUP-fu-PJ5">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconDefaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="yhU-a7-Yxs"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.88万+1.1万隆购置税" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUj-Pi-tjc">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PUj-Pi-tjc" firstAttribute="leading" secondItem="ipu-eb-RQf" secondAttribute="trailing" id="79n-y7-Wsn"/>
+                    <constraint firstItem="zSp-7Z-NO4" firstAttribute="top" secondItem="4ph-wi-ARs" secondAttribute="bottom" id="8BK-8U-cIi"/>
+                    <constraint firstItem="oGk-gt-LSL" firstAttribute="top" secondItem="EdK-1t-QkA" secondAttribute="top" id="HbZ-X0-sXg"/>
+                    <constraint firstAttribute="trailing" secondItem="pUP-fu-PJ5" secondAttribute="trailing" constant="10" id="IOe-5I-2AB"/>
+                    <constraint firstItem="ipu-eb-RQf" firstAttribute="top" secondItem="zSp-7Z-NO4" secondAttribute="bottom" constant="5" id="LJN-Im-TdK"/>
+                    <constraint firstItem="yhU-a7-Yxs" firstAttribute="centerX" secondItem="oGk-gt-LSL" secondAttribute="centerX" id="MBo-GX-TiP"/>
+                    <constraint firstItem="ipu-eb-RQf" firstAttribute="leading" secondItem="zSp-7Z-NO4" secondAttribute="leading" id="QBI-9s-hWN"/>
+                    <constraint firstItem="4ph-wi-ARs" firstAttribute="top" secondItem="oGk-gt-LSL" secondAttribute="bottom" constant="10" id="aB2-eY-jQm"/>
+                    <constraint firstItem="GFS-bj-ThZ" firstAttribute="bottom" secondItem="PUj-Pi-tjc" secondAttribute="bottom" id="cii-cP-e5p"/>
+                    <constraint firstItem="4ph-wi-ARs" firstAttribute="leading" secondItem="EdK-1t-QkA" secondAttribute="leading" constant="10" id="cmv-wZ-ocf"/>
+                    <constraint firstItem="sEa-kZ-DsE" firstAttribute="leading" secondItem="zSp-7Z-NO4" secondAttribute="trailing" constant="20" id="dpU-VU-HQJ"/>
+                    <constraint firstItem="oGk-gt-LSL" firstAttribute="leading" secondItem="EdK-1t-QkA" secondAttribute="leading" id="h6Y-99-BcL"/>
+                    <constraint firstAttribute="bottom" secondItem="ipu-eb-RQf" secondAttribute="bottom" constant="22" id="hlf-7a-zRQ"/>
+                    <constraint firstItem="yhU-a7-Yxs" firstAttribute="centerY" secondItem="oGk-gt-LSL" secondAttribute="centerY" id="hzS-Gv-1ZM"/>
+                    <constraint firstItem="zSp-7Z-NO4" firstAttribute="leading" secondItem="4ph-wi-ARs" secondAttribute="leading" id="lqb-Wu-6ES"/>
+                    <constraint firstItem="GFS-bj-ThZ" firstAttribute="top" secondItem="pUP-fu-PJ5" secondAttribute="bottom" id="qSP-Ue-Rmj"/>
+                    <constraint firstAttribute="bottom" secondItem="ipu-eb-RQf" secondAttribute="bottom" constant="10" id="r4N-VG-Yhf"/>
+                    <constraint firstItem="sEa-kZ-DsE" firstAttribute="centerY" secondItem="zSp-7Z-NO4" secondAttribute="centerY" id="rD4-hF-Erx"/>
+                    <constraint firstAttribute="trailing" secondItem="4ph-wi-ARs" secondAttribute="trailing" constant="10" id="rHi-NG-Heb"/>
+                    <constraint firstAttribute="trailing" secondItem="oGk-gt-LSL" secondAttribute="trailing" id="tA0-Um-ah4"/>
+                    <constraint firstAttribute="trailing" secondItem="GFS-bj-ThZ" secondAttribute="trailing" constant="10" id="ttu-7j-cX8"/>
+                    <constraint firstItem="PUj-Pi-tjc" firstAttribute="centerY" secondItem="ipu-eb-RQf" secondAttribute="centerY" id="ylA-hU-i1b"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="hlf-7a-zRQ"/>
+                        <exclude reference="r4N-VG-Yhf"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconCheMao" destination="yhU-a7-Yxs" id="ItO-Kf-eEd"/>
+                <outlet property="migrateLabel" destination="GFS-bj-ThZ" id="exa-s5-lul"/>
+                <outlet property="nameLabel" destination="4ph-wi-ARs" id="fc2-Ew-Dfy"/>
+                <outlet property="priceLabel" destination="zSp-7Z-NO4" id="gqa-yo-5no"/>
+                <outlet property="regionLabel" destination="pUP-fu-PJ5" id="8hx-9L-1VQ"/>
+                <outlet property="scrollView" destination="oGk-gt-LSL" id="Z56-kL-Ty6"/>
+                <outlet property="scrollViewHeightConstraint" destination="9xw-SH-Lu7" id="g2u-t0-7o0"/>
+                <outlet property="xinChePrice" destination="PUj-Pi-tjc" id="lao-U2-Wrj"/>
+            </connections>
+            <point key="canvasLocation" x="453" y="397"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconDefaultImage" width="100" height="52"/>
+    </resources>
+</document>
