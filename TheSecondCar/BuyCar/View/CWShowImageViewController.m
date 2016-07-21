@@ -48,13 +48,15 @@
         NSMutableArray *imageViews = [NSMutableArray array];
         
         for (int i = 0; i < carInfo.images.count; i++) {
+            UIScrollView *scrollView = [[UIScrollView alloc] init];
             UIImageView *imageV = [[UIImageView alloc] init];
             CGRect rect = self.scrollView.bounds;
             rect.origin.x = self.view.bounds.size.width * i;
             rect.origin.y = 0;
             imageV.frame = rect;
+            [scrollView addSubview:imageV];
             
-            [self.scrollView addSubview:imageV];
+            [self.scrollView addSubview:scrollView];
             [imageViews addObject:imageV];
         }
         self.imageViews = imageViews;
@@ -79,7 +81,6 @@
         make.centerX.equalTo(self.view);
         make.bottom.equalTo(self.view.mas_bottom).mas_offset(-20);
     }];
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
