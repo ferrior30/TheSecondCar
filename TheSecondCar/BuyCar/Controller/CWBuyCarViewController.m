@@ -47,25 +47,21 @@ extern NSString *const ModelCategoryDidSelectedNotification;
 
 @implementation CWBuyCarViewController
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navBar resignFirstResponder];
+    
+    
     // 设置导航栏
     CWBuyCarNavigationBar *navBar = (CWBuyCarNavigationBar *)self.navigationController.navigationBar;
     navBar.searchBar.delegate = self;
     self.navBar = navBar;
     
-//    UISearchBar *searchBar = [[UISearchBar alloc] init];
-//    searchBar.placeholder = @"placeholder";
-////    searchBar.width = 80;
-////    searchBar.height = 44;
-//    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:searchBar];
-//    
-//    self.navigationItem.leftBarButtonItem = item;
-//    searchBar.frame = CGRectMake(0, 0, 350, 44);
-    
-//    UINavigationBar *navBar2 = self.navigationController.navigationBar;
-//    navBar2.items
     
     // 加载数据
     NSString *path = [[NSBundle mainBundle] pathForResource:@"BuyCar.json" ofType:nil];
@@ -96,7 +92,7 @@ extern NSString *const ModelCategoryDidSelectedNotification;
     
     // 具体分类控制器
     CWModelCategoryViewController *modelCategoryVC = [[CWModelCategoryViewController alloc] init];
-    [self addChildViewController:modelCategoryVC];
+//    [self addChildViewController:modelCategoryVC];
     self.modelCategoryViewController = modelCategoryVC;
     
     
@@ -127,7 +123,7 @@ extern NSString *const ModelCategoryDidSelectedNotification;
     }
     // 2.在屏幕外
     self.modelCategoryViewController.view.frame = CGRectMake(CWScreenW, CGRectGetMaxY(self.filterView.frame), CWScreenW - 60, self.brandTableViewController.view.frame.size.height);
-    [self.view addSubview:self.modelCategoryViewController.view];
+    [self.brandTableViewController.view addSubview:self.modelCategoryViewController.view];
     
     [UIView animateWithDuration:0.25 animations:^{
         self.modelCategoryViewController.view.frame = CGRectMake(60, CGRectGetMaxY(self.filterView.frame), CWScreenW - 60, self.brandTableViewController.view.frame.size.height);
@@ -162,7 +158,11 @@ extern NSString *const ModelCategoryDidSelectedNotification;
 - (IBAction)brandButtonClicked:(UIButton *)button {
     button.selected = YES;
     
-    [self.view addSubview:self.brandTableViewController.view];
+    self.modelCategoryViewController.view.frame = CGRectMake(CWScreenW, CGRectGetMaxY(self.filterView.frame), CWScreenW - 60, self.brandTableViewController.view.frame.size.height);
+    
+    if (self.brandTableViewController.navigationController != nil) {
+        return;
+    }else [self.navigationController pushViewController:self.brandTableViewController animated:NO]; //[self.view addSubview:self.brandTableViewController.view];
     
 }
 - (IBAction)priceButtonClicked:(UIButton *)button {
@@ -179,7 +179,7 @@ extern NSString *const ModelCategoryDidSelectedNotification;
 - (CWBrandTableViewController *)brandTableViewController {
     if (_brandTableViewController == nil) {
         _brandTableViewController = [[CWBrandTableViewController alloc] init];
-        _brandTableViewController.view.frame = CGRectMake(0, CGRectGetMaxY(self.filterView.frame), [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 49 - CGRectGetMaxY(self.filterView.frame));
+        _brandTableViewController.view.frame = CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 49 - CGRectGetMaxY(self.filterView.frame));
         
 //        [self addChildViewController:_brandTableViewController];
 
@@ -225,9 +225,7 @@ extern NSString *const ModelCategoryDidSelectedNotification;
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:[[UIView alloc] init]];
     vc.navigationItem.leftBarButtonItem = item;
     vc.hidesBottomBarWhenPushed= YES;
-//     vc.navigationController.tabBarController.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
-//    NSLog(@"%@", self.bar.searchBar.text);
     vc.view.frame = CGRectMake(0, 100, 300, 200);
 }
 

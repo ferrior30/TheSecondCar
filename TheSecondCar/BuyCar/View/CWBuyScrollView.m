@@ -22,6 +22,8 @@
 @implementation CWBuyScrollView
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
+    
     self.width = [UIScreen mainScreen].bounds.size.width;
     
     self.delegate = self;

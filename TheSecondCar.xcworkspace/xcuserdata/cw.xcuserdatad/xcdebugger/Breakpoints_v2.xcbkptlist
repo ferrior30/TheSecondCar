@@ -16,7 +16,7 @@
             startingLineNumber = "18"
             endingLineNumber = "18"
             landmarkName = "-application:didFinishLaunchingWithOptions:"
-            landmarkType = "5">
+            landmarkType = "7">
             <Actions>
                <BreakpointActionProxy
                   ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
@@ -88,7 +88,7 @@
             startingLineNumber = "193"
             endingLineNumber = "193"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -202,6 +202,117 @@
                   offsetFromSymbolStart = "0">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TheSecondCar/BuyCar/View/CWShowImageViewController.m"
+            timestampString = "491024465.570759"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "-scrollViewDidEndDecelerating:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TheSecondCar/BuyCar/Controller/CWBuyCarViewController.m"
+            timestampString = "491319857.318173"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "-hotBrandButtonDidClicked:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TheSecondCar/BuyCar/Controller/CWBuyCarViewController.m"
+            timestampString = "491319857.318173"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "-hotBrandButtonDidClicked:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__51-[CWBuyCarViewController hotBrandButtonDidClicked:]_block_invoke"
+                  moduleName = "TheSecondCar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cw/Desktop/%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86%E5%8F%8A%E7%BB%83%E4%B9%A0/TheSecondCar/TheSecondCar/BuyCar/Controller/CWBuyCarViewController.m"
+                  timestampString = "491320272.368254"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "849">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__copy_helper_block_"
+                  moduleName = "TheSecondCar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cw/Desktop/%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86%E5%8F%8A%E7%BB%83%E4%B9%A0/TheSecondCar/TheSecondCar/BuyCar/Controller/CWBuyCarViewController.m"
+                  timestampString = "491320272.371071"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "51">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_"
+                  moduleName = "TheSecondCar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cw/Desktop/%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86%E5%8F%8A%E7%BB%83%E4%B9%A0/TheSecondCar/TheSecondCar/BuyCar/Controller/CWBuyCarViewController.m"
+                  timestampString = "491320272.376125"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "29">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TheSecondCar/BuyCar/Controller/CWBuyCarViewController.m"
+            timestampString = "491319857.318173"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "-hotBrandButtonDidClicked:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

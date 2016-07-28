@@ -42,6 +42,8 @@ static CGFloat leftRigthMargin = 5;
     [self addSubview:bar];
     self.searchBar = bar;
     
+    bar.placeholder = @"探索 品牌/车型";
+    
     // 1.3添加【订阅】按钮
     UIButton *subscribeBtn = [[UIButton alloc] init];
     [subscribeBtn setTitle:@"订阅" forState:UIControlStateNormal];

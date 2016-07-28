@@ -157,7 +157,6 @@
                 // tableView右边索引数组添加拼音索引
                 [self.rightIndexArray addObject:brand_py];
             }
-            
         }
         self.carArray = carArr;
         [self.carArray writeToFile:@"/Users/cw/Desktop/cars.plist" atomically:YES];
